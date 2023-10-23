@@ -1,4 +1,5 @@
 {
+  "homepage": "http://SanderVanryckeghem.github.io/SanderVanryckeghem",
   "name": "site",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
   },
   "scripts": {
     "start": "site/node_modules/.bin/react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "site/node_modules/.bin/react-scripts build",
     "test": "site/node_modules/.bin/react-scripts test",
     "eject": "site/node_modules/.bin/react-scripts eject"
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
