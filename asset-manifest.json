@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SanderVanryckeghem/static/css/main.12ae47f0.css",
-    "main.js": "/SanderVanryckeghem/static/js/main.9211d26a.js",
+    "main.js": "/SanderVanryckeghem/static/js/main.233da766.js",
     "static/media/sander.png": "/SanderVanryckeghem/static/media/sander.a355500818231bbeabe1.png",
     "static/media/hero_img_short.png": "/SanderVanryckeghem/static/media/hero_img_short.fbaeed48aa4fbf8ddf95.png",
     "index.html": "/SanderVanryckeghem/index.html",
     "main.12ae47f0.css.map": "/SanderVanryckeghem/static/css/main.12ae47f0.css.map",
-    "main.9211d26a.js.map": "/SanderVanryckeghem/static/js/main.9211d26a.js.map"
+    "main.233da766.js.map": "/SanderVanryckeghem/static/js/main.233da766.js.map"
   },
   "entrypoints": [
     "static/css/main.12ae47f0.css",
-    "static/js/main.9211d26a.js"
+    "static/js/main.233da766.js"
   ]
 }
