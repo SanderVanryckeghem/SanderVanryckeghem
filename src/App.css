@@ -189,6 +189,10 @@ h2 {
 .navbar-active-content {
     color: var(--primary);
 }
+.navbar-img{
+    width: 54px;
+    height: 54px;
+}
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
@@ -234,6 +238,8 @@ h2 {
 }
 .hero-section-img {
     display: flex;
+    height: 754px;
+    width: auto;
 }
 .hero-section-img > img {
     width: 100%;

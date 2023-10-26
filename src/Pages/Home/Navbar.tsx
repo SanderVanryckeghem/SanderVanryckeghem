@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import logo from "../../assets/logo.png"
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
 
@@ -35,7 +34,7 @@ function Navbar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
-                <img src={logo} alt="Logoipsum" />
+                <p className="hero-section-title-color">Sander Vanryckeghem</p>
             </div>
             <a
                 className={`nav_hamburger ${navActive ? "active" : ""}`}

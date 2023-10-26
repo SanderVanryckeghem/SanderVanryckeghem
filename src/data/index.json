@@ -2,25 +2,25 @@
   "skills": [
     {
       "id": 1,
-      "src":"img1",
+      "src":"./img/product-chain-1.png",
       "title": "Frontend-End",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 2,
-      "src":"img2",
+      "src":"./img/tag-1.png",
       "title": "Backend-End",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 3,
-      "src":"img3",
+      "src":"./img/feather-pen-2.png",
       "title": "Full-Stack",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": 4,
-      "src":"img4",
+      "src":"./img/feather-pen-1.png",
       "title": "Mobile-development",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
