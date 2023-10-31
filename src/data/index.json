@@ -3,26 +3,26 @@
     {
       "id": 1,
       "src":"./img/product-chain-1.png",
-      "title": "Frontend-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "title": "Front-End",
+      "description": "The art of crafting dynamic and user-friendly interfaces. A great front-end is like a good book – it draws you in and keeps you hooked!"
     },
     {
       "id": 2,
       "src":"./img/tag-1.png",
-      "title": "Backend-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "title": "Back-End",
+      "description": "The backbone of any powerful application. This is where the logic is defined, data is processed, and things are kept running smoothly."
     },
     {
       "id": 3,
       "src":"./img/feather-pen-2.png",
       "title": "Full-Stack",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "The complete package. From database to user, handling every step of the process. Full-stack development is like conducting a whole symphony!"
     },
     {
       "id": 4,
       "src":"./img/feather-pen-1.png",
-      "title": "Mobile-development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "title": "Mobile Development",
+      "description": "Life on the move. At home, in the park, at work – quality mobile apps make a difference everywhere. Mobile development is all around us."
     }
   ],
   "portfolio": [
@@ -47,5 +47,21 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
       "link": "View In Github"
     }
+  ],
+  "skillBar" :[
+    { "type": "Java", "level": 50, "url": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" },
+    { "type": "React/React Native", "level": 65, "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" },
+    { "type": "Typescript", "level": 75, "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" },
+    { "type": "Spring", "level": 30, "url": "https://www.vectorlogo.zone/logos/springio/springio-icon.svg" },
+    { "type": "Docker", "level": 25, "url": "https://www.svgrepo.com/show/353659/docker-icon.svg" },
+    { "type": "HTML/CSS", "level": 65, "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png" },
+    { "type": "Angular", "level": 30, "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" },
+    { "type": "Swift", "level": 50, "url": "https://www.svgrepo.com/show/452110/swift.svg" },
+    { "type": "Pipelines", "level": 25, "url": "https://www.freshleafmedia.co.uk/assets/media/bitbucket-pipeline_blogThumb.png" },
+    { "type": "AWS", "level": 25, "url": "https://ccrcyber.com/wp-content/uploads/2018/11/2000px-AWS_Simple_Icons_AWS_Cloud.svg1_.png" },
+    { "type": "Laravel", "level":  50, "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"}
+
+
+
   ]
 }

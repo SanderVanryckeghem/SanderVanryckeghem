@@ -138,7 +138,7 @@ function Footer() {
             </div>
             <hr className="divider" />
             <div className="footer-content-container">
-                <p className="footer-content">Made with 💖 by Sander</p>
+                <p className="footer-content">Made with 💖 by Sander inspired by Wout 🏸</p>
             </div>
         </footer>
     );
