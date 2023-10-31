@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SanderVanryckeghem/static/css/main.a5647667.css",
+    "main.css": "/SanderVanryckeghem/static/css/main.5878f27c.css",
     "main.js": "/SanderVanryckeghem/static/js/main.7dbe9510.js",
     "index.html": "/SanderVanryckeghem/index.html",
-    "main.a5647667.css.map": "/SanderVanryckeghem/static/css/main.a5647667.css.map",
+    "main.5878f27c.css.map": "/SanderVanryckeghem/static/css/main.5878f27c.css.map",
     "main.7dbe9510.js.map": "/SanderVanryckeghem/static/js/main.7dbe9510.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5647667.css",
+    "static/css/main.5878f27c.css",
     "static/js/main.7dbe9510.js"
   ]
 }
