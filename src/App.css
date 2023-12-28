@@ -644,7 +644,7 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 .divider {
-  margin: 106px 0 42.67px;
+  margin: 16px 0 42.67px;
   height: 1.333px;
   width: 100%;
   background: rgba(40, 41, 56, 0.55);
