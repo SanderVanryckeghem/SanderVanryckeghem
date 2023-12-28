@@ -195,6 +195,10 @@ h2 {
   width: 15%;
   max-width: 500px;
 }
+.navbar-logo-name {
+  display: flex;
+  align-items: center;
+}
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
