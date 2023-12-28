@@ -661,7 +661,10 @@ input[type="checkbox"] {
   font-weight: 400;
   line-height: 28px;
 }
-
+.footer-img {
+  width: 20%;
+  height: auto;
+}
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
   .hero-section-title {
