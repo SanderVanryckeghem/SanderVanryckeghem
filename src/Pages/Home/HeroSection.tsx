@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 export default function HeroSection() {
   const [text] = useTypewriter({
@@ -9,7 +10,6 @@ export default function HeroSection() {
     <section id="heroSection" className="hero-section">
       <div className="hero-section-content-box">
         <div className="hero-section-content">
-          <p className="section-title">Welcome to</p>
           <h1 className="hero-section-title">
             <span className="hero-section-title-color">{text}</span>
             <Cursor cursorColor="#ffffff" cursorStyle="_" /> <br />
@@ -18,11 +18,20 @@ export default function HeroSection() {
           <p className="hero-section-description">
             I design and develop services for customers of all sizes,
             <br />
-            specializing in creating stylish, modern websites, web services and
-            online stores.
+            specializing in creating stylish, modern websites, web services.
           </p>
         </div>
-        <button className="btn btn-primary">Get In Touch</button>
+        <Link
+          activeClass="navbar-active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="Contact"
+          className="btn btn-primary"
+        >
+          Contact Me
+        </Link>
       </div>
       <div className="hero-section-image">
         <img src="./img/hero_img_short.png" alt="Hero Section" />
