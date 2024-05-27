@@ -1,8 +1,8 @@
-# Hallo 👋, ik ben Sander Vanryckeghem!
+# Hello 👋, I'm Sander Vanryckeghem!
 
-Ik ben een communicatief individu die floreert in diverse omgevingen 🌎. Mijn aangeboren nieuwsgierigheid 🤔 drijft me om constant te leren en me aan te passen, wat me een flexibele teamspeler 🤝 maakt. Van jongs af aan heb ik geholpen in de bakkerij van mijn ouders 🥐. Deze vroege betrokkenheid heeft niet alleen een sterk arbeidsethos in me geïnstilleerd, maar me ook het belang van teamwork 🌀 geleerd. De hands-on ervaring, vooral het interactie met klanten, heeft mijn sociale vaardigheden aangescherpt, waardoor ik een zeer sociaal persoon 😃 ben.
+I am a communicative individual who thrives in diverse environments 🌎. My innate curiosity 🤔 drives me to constantly learn and adapt, making me a flexible team player 🤝. From a young age, I helped in my parents' bakery 🥐. This early involvement not only instilled a strong work ethic in me but also taught me the importance of teamwork 🌀. The hands-on experience, especially interacting with customers, has sharpened my social skills, making me a very social person 😃.
 
-Ik sta altijd klaar om een helpende hand 🤲 te bieden, en zorg ervoor dat de mensen om me heen zich gesteund en gewaardeerd voelen.
+I am always ready to lend a helping hand 🤲, ensuring that the people around me feel supported and appreciated.
 
 ## 🛠 Vaardigheden en Interesses
 - **Teamwerk**: Flexibele teamspeler met ervaring in diverse en dynamische omgevingen.
