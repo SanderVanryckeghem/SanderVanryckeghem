@@ -9,9 +9,9 @@ export default function AboutMe() {
           <h1 className="skills-section-heading">About Me</h1>
           <p className="hero-section-description">
             Hello! My name is Sander Vanryckeghem. I'm a 22-year-old from the
-            picturesque town of Harelbeke. Since my early years, I've always had
+            picturesque town of Bachte-Maria-Leerne. Since my early years, I've always had
             a passion for technology and coding. This passion led me to a career
-            as a JAVA fullstack consultant. While I'm proficient in various
+            in IT. While I'm proficient in various
             facets of software development, my heart truly lies in mobile
             development and front-end development. I believe that user
             experience is just as crucial as an application's functionality, and
