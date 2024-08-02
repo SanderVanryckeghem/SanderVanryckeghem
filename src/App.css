@@ -29,6 +29,16 @@ img {
   --secondary: #2e8b79; /* Secundaire kleur: een diepere blauwgroene tint */
   --white: #ffffff; /* Zuiver wit */
   --black: #000000; /* Zuiver zwart */
+
+  /*--primary: #8bc34a; /* Hoofdkleur: een frisse groentint */
+  /*--heading-color: #5a8b32; /* Kopkleur: diep groen voor contrast */
+  /*--bg-shade: #f1f8e9; /* Achtergrond: zeer lichte groentint */
+  /*--accent: #fdd835; /* Accent: levendige gele tint */
+  /*--dark-shade: #33691e; /* Donkere tint: diepgroen voor diepe contrasten */
+  /*--light-shade: #dcedc8; /* Lichtere tint: pastelgroen voor highlights */
+  /*--secondary: #aed581; /* Secundaire kleur: een zachte groentint */
+  /*--white: #ffffff; /* Zuiver wit */
+  /*--black: #000000; /* Zuiver zwart */
 }
 .btn {
   font-family: "Roboto";
