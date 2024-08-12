@@ -16,9 +16,9 @@ export default function HeroSection() {
             Developer
           </h1>
           <p className="hero-section-description">
-            I design and develop services for customers of all sizes,
+            I'm an Software consultant currently working for Axxes IT Consultancy,
             <br />
-            specializing in creating stylish, modern websites, web services.
+            specializing in modern websites and apps.
           </p>
         </div>
         <Link
