@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import { Switch } from '@mui/joy';
+import Floot from '@mui/icons-material/Flood';
+import Recycling from '@mui/icons-material/Recycling';
+
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -17,12 +14,12 @@ function Navbar() {
     setNavActive(!navActive);
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   const closeMenu = () => {
     setNavActive(false);
+  };
+
+  const toggleDarkMode = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsDarkMode(event.target.checked);
   };
 
   useEffect(() => {
@@ -53,7 +50,7 @@ function Navbar() {
   return (
       <nav className={`navbar ${navActive ? "active" : ""}`}>
         <div className="navbar-logo-name">
-          <img className="navbar-img" src="./logo1.png" alt={"logo"}/>
+          <img className="navbar-img" src="./logo1.png" alt={"logo"} />
           <p>My Portfolio</p>
         </div>
         <a
@@ -124,9 +121,16 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <button onClick={toggleDarkMode} className="btn btn-outline-primary">
-          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
+        <div className="dark-mode-switch">
+          <Floot color="primary"/>
+          <Switch
+              color={isDarkMode ?  'success' : 'primary'}
+              slotProps={{ input: { 'aria-label': 'dark mode' } }}
+              checked={isDarkMode}
+              onChange={toggleDarkMode}
+          />
+          <Recycling color="success"/>
+        </div>
         <Link
             onClick={closeMenu}
             activeClass="navbar-active-content"

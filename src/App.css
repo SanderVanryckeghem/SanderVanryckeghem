@@ -214,6 +214,13 @@ h2 {
   display: flex;
   align-items: center;
 }
+
+.dark-mode-switch{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 160px;
+}
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
