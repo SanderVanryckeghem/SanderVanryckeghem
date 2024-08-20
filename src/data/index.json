@@ -22,10 +22,10 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/EcoInsights.png",
+      "title": "EcoInsights",
+      "description": "Welcome to ecoInsights! This project empowers users to make environmentally conscious choices while shopping by providing instant access to eco-scores and detailed product information. By simply scanning the shelves in a store, ecoInsights recognizes products, highlights them, and displays their eco-scores. Users can dive deeper into the details of each product, including sub-scores and additional information, to better understand their environmental impact.",
+      "link": "https://github.com/SanderVanryckeghem/EcoInsights/blob/main/README.md"
     },
     {
       "id": "2",
