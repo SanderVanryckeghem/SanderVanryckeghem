@@ -221,6 +221,9 @@ h2 {
   justify-content: space-between;
   width: 100px;
 }
+.navbar-items {
+  display: contents;
+}
 /* Navbar Styler Ends */
 /* Hero Section Style */
 .hero-section {
@@ -488,6 +491,7 @@ h2 {
 .portfolio-section-img > img {
   width: 100%;
 }
+
 .portfolio-section-img img{
   height: 500px;
   object-fit: contain;
@@ -855,7 +859,6 @@ input[type="checkbox"] {
   .navbar-items {
     position: absolute;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
@@ -863,6 +866,7 @@ input[type="checkbox"] {
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
+    min-width: 500px;
   }
   .navbar-items ul {
     flex-direction: column;
@@ -879,6 +883,8 @@ input[type="checkbox"] {
   }
   .navbar-items {
     z-index: -1100;
+    display: flex;
+    flex-direction: column;
   }
   .navbar-items.active {
     top: 30px;
