@@ -1,5 +1,6 @@
 /* Global CSS */
 
+/*noinspection ALL*/
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -87,8 +88,8 @@ body.dark-mode {
 }
 .btn-github {
   color: var(--white);
-  background-color: var(--github);
-  border: var(--github);
+  background-color: var(--dark-shade);
+  border: var(--dark-shade);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -97,7 +98,7 @@ body.dark-mode {
   gap: 16px;
 }
 .btn-github:hover {
-  color: var(--github);
+  color: var(--dark-shade);
   background-color: var(--white);
 }
 /* Global CSS Ends */
@@ -125,7 +126,7 @@ h2 {
 /* Pragraphs text large medium small */
 /* Body 1 */
 .text-lg {
-  color: var(--darkblue);
+  color: var(--dark-shade);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +134,7 @@ h2 {
 }
 /* Body 2 */
 .text-md {
-  color: var(--darkblue);
+  color: var(--dark-shade);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -195,7 +196,7 @@ h2 {
 }
 /* Navbar Content */
 .navbar-content {
-  color: var(--darkblue);
+  color: var(--dark-shade);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -261,7 +262,7 @@ h2 {
   color: var(--primary);
 }
 .hero-section-description {
-  color: var(--darkblue);
+  color: var(--dark-shade);
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -334,7 +335,7 @@ h2 {
   border-bottom: 4px solid var(--primary);
 }
 .skills-section-card:hover .skills-section-description {
-  color: var(--darkblue);
+  color: var(--dark-shade);
 }
 .skills-section-img {
   display: flex;
@@ -569,7 +570,7 @@ h2 {
   color: var(--heading-color);
 }
 .testimonial-author-designation {
-  color: var(--darkblue);
+  color: var(--dark-shade);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
