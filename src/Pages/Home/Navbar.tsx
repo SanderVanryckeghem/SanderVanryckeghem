@@ -51,7 +51,7 @@ function Navbar() {
       <nav className={`navbar ${navActive ? "active" : ""}`}>
         <div className="navbar-logo-name">
           <img className="navbar-img" src="./logo1.png" alt={"logo"} />
-          <p>My Portfolio</p>
+          <p>{"{Sander Vanryckeghem}"}</p>
         </div>
         <a
             className={`nav_hamburger ${navActive ? "active" : ""}`}
@@ -120,16 +120,16 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="dark-mode-switch">
-          <Floot color="primary"/>
-          <Switch
-              color={isDarkMode ?  'success' : 'primary'}
-              slotProps={{ input: { 'aria-label': 'dark mode' } }}
-              checked={isDarkMode}
-              onChange={toggleDarkMode}
-          />
-          <Recycling color="success"/>
+          <div className="dark-mode-switch">
+            <Floot color="primary"/>
+            <Switch
+                color={isDarkMode ? 'success' : 'primary'}
+                slotProps={{input: {'aria-label': 'dark mode'}}}
+                checked={isDarkMode}
+                onChange={toggleDarkMode}
+            />
+            <Recycling color="success"/>
+          </div>
         </div>
         <Link
             onClick={closeMenu}
