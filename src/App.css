@@ -285,6 +285,7 @@ h2 {
 
 .hero-section-image img {
   width: 75%;
+  margin-top: 25px;
 }
 /* Hero Section Style Ends */
 
@@ -836,7 +837,6 @@ input[type="checkbox"] {
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 25px;
   right: 25px;
 }
 
@@ -867,7 +867,7 @@ input[type="checkbox"] {
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
-    min-width: 500px;
+    min-width: 100vw;
   }
   .navbar-items ul {
     flex-direction: column;

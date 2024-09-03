@@ -49,10 +49,19 @@ function Navbar() {
 
   return (
       <nav className={`navbar ${navActive ? "active" : ""}`}>
-        <div className="navbar-logo-name">
-          <img className="navbar-img" src="./logo1.png" alt={"logo"} />
-          <p>{"{Sander Vanryckeghem}"}</p>
-        </div>
+          <Link
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="heroSection"
+          >
+            <div className="navbar-logo-name">
+              <img className="navbar-img" src="./logo1.png" alt={"logo"}/>
+              <p>{"{Sander Vanryckeghem}"}</p>
+            </div>
+          </Link>
         <a
             className={`nav_hamburger ${navActive ? "active" : ""}`}
             onClick={toggleNav}
