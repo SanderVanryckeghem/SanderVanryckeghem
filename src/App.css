@@ -208,12 +208,14 @@ h2 {
 }
 .navbar-img {
   height: auto;
-  width: 15%;
-  max-width: 500px;
+  width: 8vw;
 }
-.navbar-logo-name {
+
+.navbar-logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
+
 }
 
 .dark-mode-switch{

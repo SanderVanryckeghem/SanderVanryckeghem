@@ -29,10 +29,10 @@
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/fietsTracker.png",
+      "title": "FietsTracker",
+      "description": "FietsTrack is an innovative cycling tracking app, specially designed for the Apple Watch. It provides cyclists the ability to monitor their biking activities in real-time, connect with external heart rate monitors, and control their music on the go.",
+      "link": "https://github.com/SanderVanryckeghem/FietsTracker"
     },
     {
       "id": "3",

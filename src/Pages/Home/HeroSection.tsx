@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 export default function HeroSection() {
   const [text] = useTypewriter({
-    words: ["FullStack", "Front-end"],
+    words: ["Mobile", "Front-end"],
     loop: true,
     delaySpeed: 2000,
   });

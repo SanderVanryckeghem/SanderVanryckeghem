@@ -57,9 +57,12 @@ function Navbar() {
               duration={500}
               to="heroSection"
           >
-            <div className="navbar-logo-name">
-              <img className="navbar-img" src="./logo1.png" alt={"logo"}/>
-              <p>{"{Sander Vanryckeghem}"}</p>
+            <div className="navbar-logo">
+              <img
+                  className="navbar-img"
+                  src={isDarkMode ? "./img/logo_green.png" : "./img/logo1.png"}
+                  alt={"logo"}
+              />
             </div>
           </Link>
         <a
