@@ -1,13 +1,54 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Switch } from '@mui/joy';
-import Floot from '@mui/icons-material/Flood';
-import Recycling from '@mui/icons-material/Recycling';
-
+import ShuffleIcon from '@mui/icons-material/Shuffle'; // Import Shuffle icon
+import Button from '@mui/material/Button'; // Use MUI Button for the theme button
+import PaletteIcon from '@mui/icons-material/Palette';
+import InvertColorsIcon from '@mui/icons-material/InvertColors';
 function Navbar() {
+  const themes = [
+    "purple-night",
+    "warm-orange",
+    "light-green",
+    "ocean-blue",
+    "sunset-red",
+    "forest-green",
+    "mystic-pink",
+    "coral-pink",
+    "midnight-blue",
+    "golden-sunrise",
+    "lavender-bliss",
+    "tropical-teal",
+    "crimson-red",
+    "ice-blue",
+    "pastel-peach",
+    "royal-purple",
+    "" // Default root theme
+  ];
+
+  const themeLogos: Record<typeof themes[number], string> = {
+    "purple-night": "./img/logo_purple.png",
+    "warm-orange": "./img/logo_orange.png",
+    "light-green": "./img/logo_green.png",
+    "ocean-blue": "./img/logo1.png",
+    "sunset-red": "./img/logo_red.png",
+    "forest-green": "./img/logo_green.png",
+    "mystic-pink": "./img/logo_purple.png",
+    "coral-pink": "./img/logo_red.png",
+    "midnight-blue": "./img/logo1.png",
+    "golden-sunrise": "./img/logo_orange.png",
+    "lavender-bliss": "./img/logo_purple.png",
+    "tropical-teal": "./img/logo_red.png",
+    "crimson-red": "./img/logo_red.png",
+    "ice-blue": "./img/logo1.png",
+    "pastel-peach": "./img/logo_orange.png",
+    "royal-purple": "./img/logo_purple.png",
+    "": "./img/logo1.png" // Default logo if no theme is selected
+  };
+
+
   const [navActive, setNavActive] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem('darkMode') === 'true';
+  const [currentTheme, setCurrentTheme] = useState(() => {
+    return localStorage.getItem('theme') || "";
   });
 
   const toggleNav = () => {
@@ -18,8 +59,10 @@ function Navbar() {
     setNavActive(false);
   };
 
-  const toggleDarkMode = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setIsDarkMode(event.target.checked);
+  const handleThemeChange = () => {
+    const availableThemes = themes.filter(theme => theme !== currentTheme);
+    const randomTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)];
+    setCurrentTheme(randomTheme);
   };
 
   useEffect(() => {
@@ -43,28 +86,48 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    document.body.classList.toggle('dark-mode', isDarkMode);
-    localStorage.setItem('darkMode', isDarkMode.toString());
-  }, [isDarkMode]);
+    document.body.className = currentTheme; // Apply the selected theme to the body
+    localStorage.setItem('theme', currentTheme); // Save theme in localStorage
+  }, [currentTheme]);
+
+    const themeColors = {
+      "purple-night": "#6a0dad",
+      "warm-orange": "#ff7f50",
+      "light-green": "#32cd32",
+      "ocean-blue": "#1e90ff",
+      "sunset-red": "#ff4500",
+      "forest-green": "#228b22",
+      "mystic-pink": "#ff69b4",
+      "coral-pink": "#ff6f61",
+      "midnight-blue": "#191970",
+      "golden-sunrise": "#ffdf00",
+      "lavender-bliss": "#7e57c2",
+      "tropical-teal": "#008080",
+      "crimson-red": "#dc143c",
+      "ice-blue": "#afeeee",
+      "pastel-peach": "#ffdab9",
+      "royal-purple": "#7851a9",
+      "": "#000000", // Default color (black)
+    };
 
   return (
       <nav className={`navbar ${navActive ? "active" : ""}`}>
-          <Link
-              onClick={closeMenu}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
-          >
-            <div className="navbar-logo">
-              <img
-                  className="navbar-img"
-                  src={isDarkMode ? "./img/logo_green.png" : "./img/logo1.png"}
-                  alt={"logo"}
-              />
-            </div>
-          </Link>
+        <Link
+            onClick={closeMenu}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            to="heroSection"
+        >
+          <div className="navbar-logo">
+            <img
+                className="navbar-img"
+                src={themeLogos[currentTheme] || "./img/logo_default.png"}
+                alt={"logo"}
+            />
+          </div>
+        </Link>
         <a
             className={`nav_hamburger ${navActive ? "active" : ""}`}
             onClick={toggleNav}
@@ -132,15 +195,10 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <div className="dark-mode-switch">
-            <Floot color="primary"/>
-            <Switch
-                color={isDarkMode ? 'success' : 'primary'}
-                slotProps={{input: {'aria-label': 'dark mode'}}}
-                checked={isDarkMode}
-                onChange={toggleDarkMode}
-            />
-            <Recycling color="success"/>
+          <div className="theme-change-icon" >
+            <Button onClick={handleThemeChange} startIcon={<InvertColorsIcon fontSize="large" style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000" }} />} style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000"}}>
+              colour
+            </Button>
           </div>
         </div>
         <Link

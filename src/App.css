@@ -34,17 +34,218 @@ img {
 
 }
 
-body.dark-mode {
-  --primary: #8bc34a; /* Hoofdkleur: een frisse groentint */
-  --heading-color: #5a8b32; /* Kopkleur: diep groen voor contrast */
-  --bg-shade: #f1f8e9; /* Achtergrond: zeer lichte groentint */
-  --accent: #fdd835; /* Accent: levendige gele tint */
-  --dark-shade: #33691e; /* Donkere tint: diepgroen voor diepe contrasten */
-  --light-shade: #dcedc8; /* Lichtere tint: pastelgroen voor highlights */
-  --secondary: #aed581; /* Secundaire kleur: een zachte groentint */
-  --white: #ffffff; /* Zuiver wit */
-  --black: #000000; /* Zuiver zwart */
+/* Existing Themes */
+
+/* Purple Night Theme */
+body.purple-night {
+  --primary: #7e57c2;
+  --heading-color: #512da8;
+  --bg-shade: #ede7f6;
+  --accent: #ff4081;
+  --dark-shade: #311b92;
+  --light-shade: #d1c4e9;
+  --secondary: #9575cd;
+  --white: #ffffff;
+  --black: #000000;
 }
+
+/* Warm Orange Theme */
+body.warm-orange {
+  --primary: #ff7043;
+  --heading-color: #bf360c;
+  --bg-shade: #fff3e0;
+  --accent: #ffca28;
+  --dark-shade: #e65100;
+  --light-shade: #ffccbc;
+  --secondary: #ffab91;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Light Green Theme */
+body.light-green {
+  --primary: #8bc34a;
+  --heading-color: #5a8b32;
+  --bg-shade: #f1f8e9;
+  --accent: #fdd835;
+  --dark-shade: #33691e;
+  --light-shade: #dcedc8;
+  --secondary: #aed581;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* New Themes */
+
+/* Ocean Blue Theme */
+body.ocean-blue {
+  --primary: #0288d1; /* Main blue tone */
+  --heading-color: #01579b; /* Dark blue for headings */
+  --bg-shade: #e1f5fe; /* Light blue for background */
+  --accent: #00acc1; /* Aqua tone for accents */
+  --dark-shade: #004d40; /* Deep green-blue for contrast */
+  --light-shade: #b3e5fc; /* Soft pastel blue for highlights */
+  --secondary: #4dd0e1; /* Light aqua for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Sunset Red Theme */
+body.sunset-red {
+  --primary: #d84315; /* Vibrant sunset red */
+  --heading-color: #bf360c; /* Deep red for headings */
+  --bg-shade: #fbe9e7; /* Soft peach background */
+  --accent: #ff8a65; /* Light red-orange accent */
+  --dark-shade: #c62828; /* Dark red for contrast */
+  --light-shade: #ffccbc; /* Light peach for highlights */
+  --secondary: #ff7043; /* Soft red for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Forest Green Theme */
+body.forest-green {
+  --primary: #4caf50; /* Forest green */
+  --heading-color: #2e7d32; /* Dark green for headings */
+  --bg-shade: #e8f5e9; /* Light green background */
+  --accent: #66bb6a; /* Bright green for accents */
+  --dark-shade: #1b5e20; /* Deep green for contrast */
+  --light-shade: #c8e6c9; /* Soft green for highlights */
+  --secondary: #81c784; /* Pastel green for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Mystic Pink Theme */
+body.mystic-pink {
+  --primary: #ec407a; /* Bold pink */
+  --heading-color: #c2185b; /* Deep pink for headings */
+  --bg-shade: #fce4ec; /* Light pink background */
+  --accent: #f48fb1; /* Light pink accent */
+  --dark-shade: #880e4f; /* Dark purple-pink for contrast */
+  --light-shade: #f8bbd0; /* Soft pastel pink for highlights */
+  --secondary: #e91e63; /* Bright pink for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Coral Pink Theme */
+body.coral-pink {
+  --primary: #ff6f61; /* Bright coral pink */
+  --heading-color: #d84315; /* Deep coral for headings */
+  --bg-shade: #ffebee; /* Light pink background */
+  --accent: #ff8a65; /* Soft coral accent */
+  --dark-shade: #bf360c; /* Dark coral for contrast */
+  --light-shade: #ffe0b2; /* Light peach for highlights */
+  --secondary: #ffab91; /* Soft peach for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Midnight Blue Theme */
+body.midnight-blue {
+  --primary: #283593; /* Deep blue */
+  --heading-color: #1a237e; /* Dark blue for headings */
+  --bg-shade: #e8eaf6; /* Soft blue background */
+  --accent: #3f51b5; /* Bright blue accent */
+  --dark-shade: #0d47a1; /* Dark navy blue for contrast */
+  --light-shade: #c5cae9; /* Light pastel blue for highlights */
+  --secondary: #7986cb; /* Soft blue for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Golden Sunrise Theme */
+body.golden-sunrise {
+  --primary: #ffa726; /* Golden orange */
+  --heading-color: #fb8c00; /* Deep orange for headings */
+  --bg-shade: #fff3e0; /* Light golden background */
+  --accent: #ffd54f; /* Bright yellow accent */
+  --dark-shade: #e65100; /* Dark orange for contrast */
+  --light-shade: #ffecb3; /* Light yellow for highlights */
+  --secondary: #ffb74d; /* Soft orange for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Lavender Bliss Theme */
+body.lavender-bliss {
+  --primary: #9575cd; /* Soft lavender */
+  --heading-color: #7e57c2; /* Deep lavender for headings */
+  --bg-shade: #ede7f6; /* Light lavender background */
+  --accent: #b39ddb; /* Bright lavender accent */
+  --dark-shade: #512da8; /* Dark purple for contrast */
+  --light-shade: #d1c4e9; /* Light purple for highlights */
+  --secondary: #ab47bc; /* Soft purple for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Tropical Teal Theme */
+body.tropical-teal {
+  --primary: #00bfa5; /* Bright teal */
+  --heading-color: #00897b; /* Deep teal for headings */
+  --bg-shade: #e0f2f1; /* Light teal background */
+  --accent: #26c6da; /* Bright aqua accent */
+  --dark-shade: #004d40; /* Dark teal for contrast */
+  --light-shade: #b2dfdb; /* Soft pastel teal for highlights */
+  --secondary: #4db6ac; /* Soft aqua for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Crimson Red Theme */
+body.crimson-red {
+  --primary: #d32f2f; /* Deep crimson red */
+  --heading-color: #b71c1c; /* Dark red for headings */
+  --bg-shade: #ffcdd2; /* Soft pink-red background */
+  --accent: #e57373; /* Bright red accent */
+  --dark-shade: #c62828; /* Dark red for contrast */
+  --light-shade: #ef9a9a; /* Light pink-red for highlights */
+  --secondary: #f44336; /* Bright red for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Ice Blue Theme */
+body.ice-blue {
+  --primary: #81d4fa; /* Light icy blue */
+  --heading-color: #0288d1; /* Deep blue for headings */
+  --bg-shade: #e1f5fe; /* Light blue background */
+  --accent: #29b6f6; /* Bright blue accent */
+  --dark-shade: #0277bd; /* Dark blue for contrast */
+  --light-shade: #b3e5fc; /* Soft pastel blue for highlights */
+  --secondary: #4fc3f7; /* Soft aqua blue for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Pastel Peach Theme */
+body.pastel-peach {
+  --primary: #ffcc80; /* Soft peach */
+  --heading-color: #ffb74d; /* Deeper peach for headings */
+  --bg-shade: #fff8e1; /* Light peach background */
+  --accent: #ffab40; /* Bright peach accent */
+  --dark-shade: #fb8c00; /* Dark peach for contrast */
+  --light-shade: #ffe0b2; /* Light peach for highlights */
+  --secondary: #ffcc80; /* Soft peach for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Royal Purple Theme */
+body.royal-purple {
+  --primary: #673ab7; /* Royal purple */
+  --heading-color: #4527a0; /* Deep purple for headings */
+  --bg-shade: #ede7f6; /* Light purple background */
+  --accent: #7e57c2; /* Bright purple accent */
+  --dark-shade: #311b92; /* Dark purple for contrast */
+  --light-shade: #d1c4e9; /* Soft pastel purple for highlights */
+  --secondary: #9575cd; /* Soft lavender for secondary elements */
+  --white: #ffffff;
+  --black: #000000;
+}
+
 
 .btn {
   font-family: "Roboto";
@@ -209,6 +410,8 @@ h2 {
 .navbar-img {
   height: auto;
   width: 8vw;
+  max-width: 100px;
+  min-width: 60px;
 }
 
 .navbar-logo {
@@ -227,6 +430,7 @@ h2 {
 .navbar-items {
   display: contents;
 }
+
 /* Navbar Styler Ends */
 /* Hero Section Style */
 .hero-section {
@@ -497,7 +701,7 @@ h2 {
 }
 
 .portfolio-section-img img{
-  height: 500px;
+  max-height: 500px;
   object-fit: contain;
 }
 .portfolio-section-card {
@@ -763,6 +967,8 @@ input[type="checkbox"] {
   .hero-section-description,
   .footer-content {
     text-align: center;
+    font-size: 15px;
+    line-height: normal;
   }
   .skills-section-container,
   .about-section,
