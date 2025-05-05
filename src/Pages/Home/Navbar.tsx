@@ -160,7 +160,7 @@ function Navbar() {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  to="mySkillsScore"
+                  to="mySkills"
                   className="navbar-content"
               >
                 Skills
@@ -191,7 +191,7 @@ function Navbar() {
                   to="MyPortfolio"
                   className="navbar-content"
               >
-                Portfolio
+                Projects
               </Link>
             </li>
           </ul>
