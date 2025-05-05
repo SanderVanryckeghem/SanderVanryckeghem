@@ -36,10 +36,10 @@
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/portfolio.png",
+      "title": "Portfolio",
+      "description": "A personal portfolio showcasing my projects, skills, and expertise. Built to highlight my journey as a developer and the work I am most proud of.",
+      "link": "https://github.com/SanderVanryckeghem/SanderVanryckeghem"
     }
   ],
   "skillBar": [
