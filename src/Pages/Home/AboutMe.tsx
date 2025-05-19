@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div className="hero-section-content">
           <h1 className="skills-section-heading">About Me</h1>
           <p className="hero-section-description">
-            Hello! My name is Sander Vanryckeghem. I'm a 22-year-old from the
+            Hello! My name is Sander Vanryckeghem. I'm a 23-year-old from the
             picturesque town of Bachte-Maria-Leerne. Since my early years, I've always had
             a passion for technology and coding. This passion led me to a career
             in IT. While I'm proficient in various
@@ -22,6 +22,14 @@ export default function AboutMe() {
             If you're interested in collaborating or just learning more about my
             work, please don't hesitate to get in touch!
           </p>
+          <a
+            href="/sander_vanryckeghem_cv.pdf"
+            download
+            className="btn btn-primary"
+            style={{ marginTop: "1.5rem" }}
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </section>
