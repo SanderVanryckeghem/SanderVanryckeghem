@@ -23,7 +23,7 @@ export default function AboutMe() {
             work, please don't hesitate to get in touch!
           </p>
           <a
-            href="/sander_vanryckeghem_cv.pdf"
+            href="/Sander_vanryckeghem_cv.pdf"
             download
             className="btn btn-primary"
             style={{ marginTop: "1.5rem" }}
