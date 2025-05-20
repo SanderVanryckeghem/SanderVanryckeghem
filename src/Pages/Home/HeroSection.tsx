@@ -16,7 +16,7 @@ export default function HeroSection() {
             Developer
           </h1>
           <p className="hero-section-description">
-            I'm an Software consultant currently working for Axxes IT Consultancy,
+            I'm an Software developer currently working for Axxes IT Consultancy,
             <br />
             specializing in modern websites and apps.
           </p>
