@@ -31,7 +31,7 @@ export default function ContactMe() {
                     Accept: "application/json"
                 },
                 body: JSON.stringify({
-                    access_key: "c8ced628-eea3-4082-b3b5-4910eee89085", // Replace with your actual Web3Forms access key
+                    access_key: "c8ced628-eea3-4082-b3b5-4910eee89085",
                     name: `${formData.firstName} ${formData.lastName}`,
                     email: formData.email,
                     phone: formData.phoneNumber,
@@ -79,14 +79,11 @@ export default function ContactMe() {
                 </div>
             ) : (
                 <form className="contact-form-container" onSubmit={handleSubmit}>
-                    {/* Web3Forms requires a hidden input with the access key */}
                     <input 
                         type="hidden" 
                         name="access_key" 
                         value="c8ced628-eea3-4082-b3b5-4910eee89085" 
                     />
-                    
-                    {/* Optional: Add a honeypot field to prevent spam */}
                     <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
                     
                     <div className="container">
