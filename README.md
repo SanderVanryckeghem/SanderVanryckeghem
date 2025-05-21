@@ -12,10 +12,4 @@ I am always ready to lend a helping hand 🤲, ensuring that the people around m
 - LinkedIn: [https://www.linkedin.com/in/sander-vanryckeghem-b29042b9/](https://www.linkedin.com/in/sander-vanryckeghem-b29042b9/)
 - E-mail: sandervanryckeghem@outlook.com
 
-## 📈 Enkele Projecten
-- [Project 1](https://github.com/SanderVanryckeghem/project1)
-- [Project 2](https://github.com/SanderVanryckeghem/project2)
-
-Ik nodig je uit om door mijn projecten 📂 te bladeren en feedback of vragen te delen. Ik waardeer je tijd en interesse! 💙
-
 ![Sander Vanryckeghem's GitHub statistieken](https://github-readme-stats.vercel.app/api?username=SanderVanryckeghem&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=default_repocard)
