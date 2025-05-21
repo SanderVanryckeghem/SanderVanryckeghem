@@ -1168,6 +1168,10 @@ input[type="checkbox"] {
   .nav_hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
+
+  .portfolio-section {
+    gap: 20px;
+  }
 }
 
 @keyframes shake {
@@ -1181,4 +1185,3 @@ input[type="checkbox"] {
   animation-iteration-count: 1;
   transform-origin: center center;
 }
-
