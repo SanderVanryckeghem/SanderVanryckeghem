@@ -968,11 +968,19 @@ input[type="checkbox"] {
     font-size: 17.333px;
     line-height: 27px;
   }
+  .about-section-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .skills-score-section-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about-section-img {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -1071,6 +1079,10 @@ input[type="checkbox"] {
     flex: 1 1 0;
     overflow: visible;
     width: 100%;
+  }
+  .about-section-img {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 
