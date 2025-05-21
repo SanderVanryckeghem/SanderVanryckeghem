@@ -729,8 +729,6 @@ h3 {
   cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  height: 600px; /* Set a fixed height for all cards */
-  overflow: hidden; /* Prevent content overflow */
 }
 .portfolio-section-card-content {
   display: flex;
@@ -753,6 +751,25 @@ h3 {
 }
 .portfolio-section-card:hover path {
   stroke: #006b6a;
+}
+.portfolio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.portfolio-button svg {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-button:hover svg {
+  transform: translate(3px, -3px);
 }
 /* Portfolio Ends */
 
