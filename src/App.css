@@ -1025,8 +1025,7 @@ input[type="checkbox"] {
   .contact-section,
   .footer-container {
     gap: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 10px 70px 10px 70px;
   }
   .about-section {
     gap: 20px;
