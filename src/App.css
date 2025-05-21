@@ -696,17 +696,15 @@ h3 {
   gap: 21.3px;
 }
 .portfolio-section-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 42.6px;
   width: 100%;
 }
 .portfolio-section-img {
   border-radius: 8px;
-  flex: 0 0 auto;
   width: 100%;
-  height: 60%; /* Allocate 60% of the card height for the image */
+  height: 250px; /* Fixed height for image container */
   overflow: hidden;
 }
 
@@ -715,28 +713,30 @@ h3 {
 }
 
 .portfolio-section-img img{
-  max-height: 500px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .portfolio-section-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  height: 600px;
 }
 .portfolio-section-card-content {
   display: flex;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 16px;
   align-self: stretch;
+  flex: 1;
 }
 .portfolio-section-title {
   color: var(--heading-color);
