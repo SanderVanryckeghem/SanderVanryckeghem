@@ -978,6 +978,7 @@ input[type="checkbox"] {
   .hero-section-content,
   .hero-section-content-box {
     align-items: center;
+    margin-bottom: 20px;
   }
   .portfolio-container-box {
     gap: 30px;
