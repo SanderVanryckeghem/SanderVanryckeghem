@@ -3,7 +3,9 @@ import { Link } from "react-scroll";
 import ShuffleIcon from '@mui/icons-material/Shuffle'; // Import Shuffle icon
 import Button from '@mui/material/Button'; // Use MUI Button for the theme button
 import PaletteIcon from '@mui/icons-material/Palette';
-import InvertColorsIcon from '@mui/icons-material/InvertColors';
+import FormatPaintIcon from '@mui/icons-material/FormatPaint';
+import AnimationIcon from '@mui/icons-material/Animation';
+
 function Navbar() {
   const themes = [
     "purple-night",
@@ -51,6 +53,8 @@ function Navbar() {
     return localStorage.getItem('theme') || "";
   });
 
+  const [isShaking, setIsShaking] = useState(false);
+
   const toggleNav = () => {
     setNavActive(!navActive);
   };
@@ -63,6 +67,20 @@ function Navbar() {
     const availableThemes = themes.filter(theme => theme !== currentTheme);
     const randomTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)];
     setCurrentTheme(randomTheme);
+  };
+
+  const handleShake = () => {
+    // Only start shaking if not already shaking
+    if (!isShaking) {
+      setIsShaking(true);
+      document.body.classList.add('shake-animation');
+      
+      // Remove the shake class after 5 seconds
+      setTimeout(() => {
+        document.body.classList.remove('shake-animation');
+        setIsShaking(false);
+      }, 2000);
+    }
   };
 
   useEffect(() => {
@@ -195,10 +213,20 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <div className="theme-change-icon" >
-            <Button onClick={handleThemeChange} startIcon={<InvertColorsIcon fontSize="large" style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000" }} />} style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000"}}>
-              colour
-            </Button>
+          <div className="navbar_icon_content">
+            <div className="theme-change-icon" >
+              <Button onClick={handleThemeChange} startIcon={<FormatPaintIcon fontSize="large" style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000" }} />} style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000"}}>
+              </Button>
+            </div>
+            <div className="shake-icon" >
+              <Button 
+                onClick={handleShake} 
+                startIcon={<AnimationIcon fontSize="large" style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000" }} />} 
+                style={{ color: themeColors[currentTheme as keyof typeof themeColors] || "#000000"}}
+                disabled={isShaking}
+              >
+              </Button>
+            </div>
           </div>
         </div>
         <Link
