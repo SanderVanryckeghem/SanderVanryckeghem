@@ -62,8 +62,7 @@ export default function ContactMe() {
     return (
         <section id="Contact" className="contact-section">
             <div>
-                <p className="sub-title">Get In Touch</p>
-                <h2>Contact Me</h2>
+              <h1 className="skills-section-heading">Get In Touch</h1>
             </div>
             
             {isSubmitted ? (
