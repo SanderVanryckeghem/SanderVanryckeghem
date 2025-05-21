@@ -340,11 +340,10 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  overflow: hidden; /* Hide overflowing text */
-  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  white-space: normal;
 }
 /* Body 3 */
 .text-sm {
@@ -457,6 +456,7 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  
 }
 .hero-section-content {
   display: flex;
@@ -545,7 +545,7 @@ h3 {
   flex: 1 0 0;
   border-radius: 10.6px;
   background: var(--bg-shade);
-  height: 250px;
+  height: 300px;
   border-bottom: 4px solid var(--bg-shade);
 }
 .skills-section-card:hover {
@@ -578,11 +578,16 @@ h3 {
   line-height: 45px;
 }
 .skills-section-description {
-  color: var(--black);
   font-size: 21.3px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+  color: var(--black);
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  white-space: normal;
+  max-height: none;
 }
 
 /*skills-score*/
@@ -727,16 +732,19 @@ h3 {
   cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  height: 600px;
+  height: 100%;
+  min-height: 300px;
 }
 .portfolio-section-card-content {
   display: flex;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 16px;
   align-self: stretch;
   flex: 1;
+  height: 100%;
 }
 .portfolio-section-title {
   color: var(--heading-color);
@@ -982,7 +990,7 @@ input[type="checkbox"] {
   .hero-section-description,
   .footer-content {
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     line-height: normal;
   }
   .skills-section-container,
@@ -1049,6 +1057,21 @@ input[type="checkbox"] {
 
   .skills-score-section-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills-section-card {
+    height: auto;
+    min-height: 180px;
+    max-height: none;
+    overflow: visible;
+    padding: 20px;
+    gap: 16px;
+  }
+  .skills-section-card-content {
+    gap: 10px;
+    flex: 1 1 0;
+    overflow: visible;
+    width: 100%;
   }
 }
 
