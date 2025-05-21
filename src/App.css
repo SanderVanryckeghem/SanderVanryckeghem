@@ -826,12 +826,11 @@ h3 {
 /* MySkillsScore Ends */
 .contact-section {
   display: flex;
-  padding: 0px 85px 30px 85px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 64px;
+  gap: 32px;
 }
 .contact-form-container {
   display: grid;
